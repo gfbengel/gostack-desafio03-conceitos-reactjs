@@ -18,9 +18,9 @@ function App() {
     const url = `http://github.com/${Date.now()}`
 
     const techs = [
-      `tech ${Math.random * 100}`,
-      `tech ${Math.random * 100}`,
-      `tech ${Math.random * 100}`
+      `tech ${Math.round(Math.random() * 1000)}`,
+      `tech ${Math.round(Math.random() * 1000)}`,
+      `tech ${Math.round(Math.random() * 1000)}`
     ]
     const response = await api.post('/repositories', {
 			title, url, techs
